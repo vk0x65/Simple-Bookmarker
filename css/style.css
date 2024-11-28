@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+::selection {
+  background-color: #89A8B2;
+  color: #1C325B;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #f3f2fa;
+}
+
+main h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #1C325B;
+  isolation: isolate;
+}
+
+main h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #89A8B2;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+main h1:hover::before {
+  height: 50%;
+}
+
+.bookmark-body h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #8174A0, #EFB6C8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #7BD3EA;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #60bffe55;
+}
+
+.btn-delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #FA4032;
+  --bs-btn-border-color: #FA4032;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #cc352a;
+  --bs-btn-hover-border-color: #cc352a;
+  border-radius: 3px;
+  width: 8rem;
+  height: 2.4rem;
+  text-align: center;
+}
+
+.btn-submit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #7BD3EA;
+  --bs-btn-border-color: #7BD3EA;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4c9db1;
+  --bs-btn-hover-border-color: #7BD3EA;
+  border-radius: 3px;
+  width: 13rem;
+  height: 2.4rem;
+}
+
+.btn-open {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #7ED4AD;
+  --bs-btn-border-color: #7ED4AD;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #55a581;
+  --bs-btn-hover-border-color: #55a581;
+  border-radius: 3px;
+  width: 8rem;
+  height: 2.4rem;
+  text-align: center;
+}
+
+table {
+  vertical-align: middle !important;
+}
+
+.box-info {
+  background-color: #0007;
+}
+
+.box-conent {
+  width: 500px;
+  z-index: 10;
+}
+
+.box-conent p {
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  color: #352e28;
+}
+
+.rules li {
+  font-size: 18px;
+  padding-top: 10px;
+}
+.rules i {
+  color: #bb4120;
+}
+
+.circles span {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.circles span:nth-child(1) {
+  background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+  background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+  background-color: #4db748;
+}
+
+.logo {
+  width: 40px;
+}
